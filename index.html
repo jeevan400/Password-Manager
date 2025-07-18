@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassX - Your Personal Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">PassX</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <h1>Password Manager</h1>
+            <p>Create your account now and manage all your passwords in one secure place.
+                With Covisit, your credentials stay safe, encrypted, and accessible only to you.
+            </p>
+            <h2>Your Passwords</h2>
+            <p class="alert copy">Copied!</p>
+            <table class="dataTable">
+                <tr>
+                    <th>Website</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+            <h2>Add a Password</h2>
+            <form action="/submit" method="post">
+                <!-- <label for="website">Website: </label> -->
+                <input type="text" name="website" id="website" placeholder="Enter Website name" required><br><br>
+                <div class="inputs">
+                    <!-- <label for="username">Username: </label> -->
+                    <input type="text" name="username" id="username" placeholder="Enter username" required>
+                    <!-- <label for="password">Password: </label> -->
+                    <input type="password" name="password" id="password" placeholder="Enter password" required><br>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
